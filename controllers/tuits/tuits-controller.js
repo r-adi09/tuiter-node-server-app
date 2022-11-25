@@ -9,6 +9,7 @@ const createTuit = (req, res) => {
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
     tuits.push(newTuit);
+    console.log(newTuit);
     res.json(newTuit);
 }
 const updateTuit = (req, res) => {
